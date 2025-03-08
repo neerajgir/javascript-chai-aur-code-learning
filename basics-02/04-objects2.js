@@ -51,3 +51,14 @@ console.log(Object.keys(bumbleUser).length); //this will return the length of th
 
 console.log(bumbleUser.hasOwnProperty('id')); //this will return true or false if the object has the property or not
 console.log(bumbleUser.hasOwnProperty('email')); //this will return true or false if the object has the property or not
+
+//object destructuring
+
+const course ={
+    name: 'Javascript',
+    duration: '3 months',
+    price: 1000
+}
+
+const {duration: time} = course;
+console.log(time); //this will return the value of the duration property
